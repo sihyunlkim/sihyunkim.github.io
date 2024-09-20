@@ -1,11 +1,13 @@
-#Project: Lost in the Arts Center
+# Project: Lost in the Arts Center
 
 The project can be accessed [here](https://sihyunlkim.github.io/COMMLAB30MFFWEBSITE).
 
-##Project Description:
+## Project Description:
+
 The overall concept of the website is to essentially serve as an interactive “guidebook” to help the audience navigate through the various aspects of the film Lost in the Arts Center, a 30 MFF that depicts the narrative of the “common experience” of NYUAD students getting lost in the Arts Center. The website I created serves as a dedicated platform for showcasing Lost in the Arts Center in a way that enhances the viewing experience, providing a place to watch the film and a space for deeper engagement with the project’s themes and production process. Inspired by different streaming platforms, such as Netflix and Amazon Prime, the website’s content is organized in a sleek, user-friendly layout that encourages seamless exploration. Consisting of six main pages—Home, About, Videos, Cast & Crew, Photos, and Rate—the site is structured to deliver an intuitive browsing experience, allowing users to effortlessly access the film, view related content, and explore additional features.
 
-##Process:
+## Process:
+
 Since the website for this project had to be built around the video Haris and I took for the 30 MFF video assignment, I thoroughly re-watched the video we made. And I realized that our video was like a movie trailer. So, at first, I came up with the idea of coming up with typical movie review websites (e.g. Rotten Tomatoes, IMDB), where you could access all movie-related information in 1-2 web pages. However, while wireframing, I thought that creating a website in the form of a guidebook, where the user can easily access different pages using either menu bars or previous and next buttons, would better help the user navigate the content and engage with the project's themes. Also, wireframing helped me to determine what pages I should have for the website.
 
 Before starting to build the website, I had to explore HTML, JavaScript, and CSS as it was my first time coding with these languages. The class code examples and CHATGPT were a great help in understanding and getting familiar with these languages. 
@@ -22,7 +24,8 @@ After styling the pages, I started to code the JavaScript to add interactivity a
 
 In the process of coding, CHATGPT helped me a lot in debugging. As I was new to these coding languages, whenever I received unexpected errors, I did not know what to do, but CHATGPT helped me a lot in figuring out the errors and debugging them. 
 
-##Reflection/Evaluation: 
+## Reflection/Evaluation: 
+
 Comparing my final version with the wireframe I made, I think it changed a lot. While the initial concept I thought of still maintains the same, which was to make an “interactive guidebook” website for the film, the layout changed a lot. 
 
 While the concept of using the previous and next buttons to navigate the pages remained the same, I decided to make a change to the site’s navigation structure. Initially, I had included a small circle row at the bottom of each page, which allowed users to jump to any page they wanted. However, after further consideration, I realized that this method might not provide the best user experience, especially for a site designed to guide users through content in a more structured manner.

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Lost in the Arts Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation bar with links to different sections of the website -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+            <li><a href="about.html">About</a></li> <!-- Link to About page -->
+            <li><a href="videos.html">Videos</a></li> <!-- Link to Videos page -->
+            <li><a href="cast.html">Cast & Crew</a></li> <!-- Link to Cast & Crew page -->
+            <li><a href="photos.html">Photos</a></li> <!-- Link to Photos page -->
+            <li><a href="rate.html">Rate</a></li> <!-- Link to Rate page -->
+        </ul>
+    </nav>
+
+<!-- Main content container -->
+<div class="big-square">
+    <!-- Film Logo Image above the video container -->
+    <img src="logo.png" alt="Film Logo" class="logo-image">
+    <!-- Video container with controls for playback -->
+    <div class="video-container">
+        <iframe width="1000" height="562"
+        src="https://www.youtube.com/embed/4jTRi0lxMDg" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<!-- Navigation buttons -->
+<div>
+     <!-- Previous button going about page -->
+    <!-- inline styling added to adjust position -->
+    <button class="toggle-btn prev-btn" onclick="location.href='about.html'" style="margin: -350px 0px 0 30px;">&lt;</button>
+    <!-- Next button going cast page -->
+    <!-- inline styling added to adjust position -->
+    <button class="toggle-btn next-btn" onclick="location.href='cast.html'" style="margin: -350px 30px 0 0px;">&gt;</button>
+</div>
+
+
+<!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

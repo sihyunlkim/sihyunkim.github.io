@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cast & Crew - Lost in the Arts Center</title>
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar with links to different sections of the website -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+            <li><a href="about.html">About</a></li> <!-- Link to About page -->
+            <li><a href="videos.html">Videos</a></li> <!-- Link to Videos page -->
+            <li><a href="cast.html">Cast & Crew</a></li> <!-- Link to Cast & Crew page -->
+            <li><a href="photos.html">Photos</a></li> <!-- Link to Photos page -->
+            <li><a href="rate.html">Rate</a></li> <!-- Link to Rate page -->
+        </ul>
+    </nav>
+
+
+    <!-- Main Section of the Cast page containing the cast and crew details-->
+    <section class="cast-crew-container">
+        <!-- Heading for the section -->
+        <h2>Meet the Cast & Crew</h2>
+         <!-- Container for the cast and crew profiles -->
+        <div class="cast-crew">
+            <!-- First Member: Haris -->
+            <div class="cast-member">
+                <!-- picture of the member with onclick event to open a modal--> 
+                <img src="Haris.jpeg" alt="Cast 1" onclick="showModal('modal1')">
+                <h3>Haris Kocan</h3> <!-- Name--> 
+            </div>
+            <!-- Second Member: Sihyun -->
+            <div class="cast-member">
+                 <!-- picture of the member with onclick event to open a modal--> 
+                <img src="Sihyun.png" alt="Cast 2" onclick="showModal('modal2')">
+                <h3>Sihyun Kim </h3> <!-- Name--> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Harris -->
+    <div id="modal1" class="modal">
+        <!-- Content of the modal for John Doe -->
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <!-- Member's name  -->
+            <h2 style="margin: -50px auto 0 auto;" >Haris Kocan</h2>
+             <!-- Brief description about the member -->
+            <p >Haris Kocan helms the direction of this film, weaving together a narrative that is both visually captivating and emotionally resonant. With a keen eye for detail and a deep understanding of the artistic environment, Haris guides the audience through the labyrinth of the arts center, skillfully balancing moments of tension and tranquility. His direction brings out the best in the cast, particularly in the nuanced portrayal of the protagonist, Sihyun Kim. <p>
+        </div>
+    </div>
+
+    <!-- Modal for Sihyun -->
+    <div id="modal2" class="modal">
+        <!-- Content of the modal for John Doe -->
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <!-- Member's name  -->
+            <h2 style="margin: -50px auto 0 auto;">Sihyun Kim</h2>
+            <!-- Brief description about the member -->
+            <p>Sihyun Kim takes on the leading role in this film, bringing to life the character of someone navigating the intricate and mysterious halls of the arts center. As the protagonist, Sihyun captures the essence of exploration and discovery, skillfully portraying the emotions of being both physically and metaphorically lost in a creative space. Her performance is central to the narrative, offering a compelling and relatable portrayal that guides the audience through the film’s journey.</p>
+        </div>
+    </div>
+    <!-- Navigation buttons -->
+    <div>
+        <!-- Previous button going videos page -->
+        <!-- inline styling added to adjust position -->
+        <button class="toggle-btn prev-btn" onclick="location.href='videos.html'" style="margin: -350px 0px 0 30px;">&lt;</button>
+        <!-- Next button going videos page -->
+        <!-- inline styling added to adjust position -->
+        <button class="toggle-btn next-btn" onclick="location.href='photos.html'" style="margin: -350px 30px 0 0px;">&gt;</button>
+    </div>
+<!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

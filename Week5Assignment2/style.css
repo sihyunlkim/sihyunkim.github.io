@@ -1,0 +1,191 @@
+@font-face{
+    font-family: 'GloriaHallelujah';
+    src: url('font/GloriaHallelujah-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    /* Set height of the html page to 100% of the browser height */
+    height: 100%;
+    /* Hide horizontal scroll */
+    overflow-x: hidden;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body{
+    /* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
+    font-family: 'GloriaHallelujah';
+    font-size: 20px;
+    height: 100%;
+    margin: 0px;
+}
+
+/* 
+Navigation Bar 
+*/
+#nav{
+    /* Fix navigation bar at the top middle of the web page */
+    position: fixed;
+    /* calc() CSS function calculates numbers of different units */
+    left: calc(50% - 50px);
+    top: 20px;
+    /* Display nav bar on top of everything else */
+    z-index: 1;
+}
+
+.nav-btn{
+    width: 20px;
+    height: 20px;
+    /* Make square div into a circle */
+    border-radius: 50%;
+    background-color: #f1ce53;
+    border: 1px solid orange;
+    display: inline-block;
+    cursor: pointer;
+    /* transition changes in background-color */
+    transition: background-color 0.5s;
+}
+
+/* When a nav-btn is hovered on, set background-color to black */
+.nav-btn:hover{
+    background-color: #d07328;
+}
+
+
+
+#section1, #section2, #section3{
+    /* Set height of div to 100% */
+    height: 100%;
+    /* The bottom three background CSS settings create parallax effect */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#section1{
+
+    background-image: url('img/titlepic.png');
+}
+
+#section2{
+
+    background-image: url('img/sky.png');
+    position: relative;
+    overflow: hidden; /* To avoid scrollbars if the image moves outside the section */
+}
+#section3{
+   
+    background-image: url('img/sky.png');
+}
+#moving-image {
+    position: absolute; 
+    width: 400px;
+    top: 70%; 
+    left: 80%;
+    transform: translate(-50%, -50%); 
+    transition: top 0.2s ease-out; 
+}
+
+
+#call-div{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    top: calc(100% - 300px);
+    left: calc(50% - 75px);
+}
+
+#call{
+    width: 200px;
+    margin-top: 25px;
+}
+
+
+
+#plane-div{
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#plane-text{
+    color: black;
+    background: white;
+}
+
+#plane{
+    width: 500px;
+    display: block;
+    margin: auto;
+    transform: rotate(15deg);
+}
+
+#grandpa-div{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+}
+
+#grandpa-text{
+    color: black;
+    background: white;
+}
+
+#grandpa{
+    width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: -100px;
+}
+
+#popup-image {
+    z-index: 100; 
+    width: 600px;
+    left: 80%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transform: scale(0s);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#popup-image.visible {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+.text-section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff9f2;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    width: 70%;
+    text-align: center; 
+}
+
+.text-image {
+    width: 500px;
+    display: block;
+    margin-top: 20px;
+}
+.text2-image {
+    width: 700px;
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+

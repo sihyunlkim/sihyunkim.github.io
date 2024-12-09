@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sihyun Kim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <!-- Navigation Bar -->
+        <li><a href= "#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-container">
+
+        <!-- Image -->
+        <img src="images/main.png" alt="Sihyun's Picture" class="home-image">
+        
+        <!-- Button (on top of image) -->
+        <button class="know-more-button" onclick="navigateToAbout()" aria-label="Learn more about Sihyun">Know More</button>
+        
+        <!-- Text (behind the image) -->
+        <div class="home-text">
+          <h2>HI! I AM</h2>
+          <h1>SIHYUN</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>MY PROJECTS</h2>
+      <!-- Container for project cards -->
+      <a href="https://sihyunlkim.github.io/COMMLAB30MFFWEBSITE/" target="_blank" class="project-link">
+      <div class="project-container">
+
+        <!-- Project 1: First project card with hover effect to swap images -->
+        <div class="project-card" 
+             onmouseover="swapImage(this, 'cardimages/5.png')" 
+             onmouseout="swapImage(this, 'cardimages/1.png')" >
+          <img src="cardimages/1.png" alt="Project 1 Card">
+        </div>
+      </a>
+
+
+        <!-- Project 2:Second project card with hover effect to swap images -->
+        <a href="https://khaleeks.github.io/comicAssign/index.html" target="_blank" class="project-link">
+        <div class="project-card" 
+             onmouseover="swapImage(this, 'cardimages/6.png')" 
+             onmouseout="swapImage(this, 'cardimages/2.png')" >
+          <img src="cardimages/2.png" alt="Project 2 Card ">
+        </div>
+      </a>
+
+
+        <!-- Project 3: Third project card with hover effect to swap images -->
+        <a href="https://liyarafeeq.github.io/website4/" target="_blank" class="project-link">
+        <div class="project-card" 
+             onmouseover="swapImage(this, 'cardimages/7.png')" 
+             onmouseout="swapImage(this, 'cardimages/3.png')" >
+          <img src="cardimages/3.png" alt="Project 3 Card" >
+        </div>
+      </a>
+
+
+        <!-- Project 4: Fourth project card with hover effect to swap images -->
+        <a href="https://aleks4ndrr.github.io/video-project/" target="_blank" class="project-link">
+        <div class="project-card" 
+             onmouseover="swapImage(this, 'cardimages/8.png')" 
+             onmouseout="swapImage(this, 'cardimages/4.png')">
+          <img src="cardimages/4.png" alt="Project 4 Card">
+        </div>
+      </a>
+
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="skills-container">
+        <!-- Left Side: Text -->
+        <div class="skills-text">
+          <h2>MY SKILLS</h2>
+          <p> Click Sihyun to see her skills! </p>
+        </div>
+        
+        <!-- Right Side: Image -->
+        <div class="skills-image">
+          <img id="skills-image" src="bubbleImages/1.png" alt="Image of Sihyun Thinking" onclick="changeImage()">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+      <h2>Contact Me Through Various Platforms!</h2>
+      <!-- Container for contact buttons -->
+      <div class="contact-container">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/sihyunlkim" target="_blank" class="contact-button">
+          <img src="logos/1.png" alt="Instagram">
+          <span>@sihyunlkim</span>
+        </a>
+        
+        <!-- Github -->
+        <a href="https://github.com/sihyunlkim" target="_blank" class="contact-button">
+          <img src="logos/4.png" alt="Github">
+          <span>sihyunlkim</span>
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/sihyun-kim-631774216/" target="_blank" class="contact-button">
+          <img src="logos/2.png" alt="LinkedIn">
+          <span>Sihyun Kim</span>
+        </a>
+        
+        <!-- Email -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sk11019@nyu.edu" target="_blank"  class="contact-button">
+          <img src="logos/3.png" alt="Email">
+          <span>sk11019@nyu.edu</span>
+        </a>
+      </div>
+      <button class= "cv-button" onclick="downloadCV()"> My CV</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Sihyun Kim. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

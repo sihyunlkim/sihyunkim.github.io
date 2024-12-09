@@ -1,0 +1,441 @@
+
+/* Fonts */
+@font-face{
+    font-family: 'impact';
+    src: url('font/impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'poppinsLight';
+    src: url('font/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'poppinsRegular';
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'migra';
+    src: url('font/PPMigra-Extralight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* General Styling */
+body {
+  font-family: 'poppinsLight';
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: white;
+}
+
+/* Header (Navigation Bar) Styling */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center the entire menu bar */
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+  color:  #689b61;
+}
+
+
+/* Button Styling */
+button {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* General Section Styling */
+section {
+  padding: 80px 20px;
+  margin: 20px 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background:  #689b61;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3000;
+}
+
+
+
+/* Home Section Styling */
+#home {
+  position: relative;
+  height: auto; /* Allow the section height to adjust based on the content */
+  background-color: white ; /* Light background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top of the section */
+  overflow: hidden; /* Hide anything overflowing the section */
+  padding-bottom: 0; /* Ensure no padding at the bottom */
+}
+
+
+.home-container {
+  position: relative;
+  text-align: center;
+}
+
+/* Image Styling */
+.home-image {
+  max-width: 800px; /* Adjust the image size */
+  position: relative;
+  z-index: 2; /* Place the image above the text but below the button */
+
+}
+
+/* Text Stylings */
+.home-text {
+  position: absolute; /* Allow text to overlap with the image */
+  top: 10%; /* Adjust as needed to center the text vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  z-index: 1; /* Ensure text is below the image */
+  color: #333; /* Text color */
+}
+
+.home-text h2 {
+  font-family: 'poppinsLight';
+  font-size: 100px;
+  color: #555; /* Subheading color */
+  margin-top: 100px;
+  margin-bottom: -450px;
+}
+
+.home-text h1 {
+  font-family: 'impact';
+  font-size: 450px;
+  font-weight: bold;
+  color: #689b61; /* Green color for the name */
+  margin-bottom: -450px;
+}
+
+
+/* Know more button Styling */
+.know-more-button {
+  position: absolute; /* Positioning to overlap the image */
+  top: 80%; /* Adjust to place the button correctly */
+  left: 35%; /* Center horizontally */
+  background: #689b61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'poppinsRegular';
+  font-size: 35px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 3; /* Ensure the button is above everything */
+}
+
+.know-more-button:hover {
+  transform: scale(1.05);
+}
+
+/* Project Section Styling */
+section#projects {
+  position: relative; /* Make the section a positioned container */
+  text-align: center; /* Center text horizontally within the section */
+  padding-top: 20px; /* Add spacing at the top of the section */
+  background-color: white;
+
+}
+
+/* Section Title Styling */
+section#projects h2 {
+  font-family: 'impact';
+  letter-spacing: 2px;
+  position: absolute; /* Position the title independently */
+  top: 10px; /* Adjust the vertical position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  margin: 0; /* Remove default margins */
+  font-size: 60px; /* Adjust as needed */
+  color: #295ba9; /* Text color */
+  z-index: 2; /* Ensure it stays on top of other elements */
+}
+/* Project Link Styling */
+.project-link {
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the link behave like a container */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Project Cards Container Styling */
+.project-container {
+  margin-top: 50px;
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: center; /* Center the cards within the section */
+  gap: 20px; /* Add space between the cards */
+  padding: 50px; /* Optional: Add padding to the container */
+}
+
+/* Individual Project Card  Styling*/
+.project-card  {
+  flex: 1 1 calc(25% - 40px); /* Each card takes up 1/3 of the row minus spacing */  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0; /* Remove unnecessary vertical centering margin */
+}
+.project-card img {
+    width: 100%; /* Make the image span the full width of the card */
+    height: 100%; /* Make the image span the full height of the card */
+    object-fit: cover; /* Ensure the image covers the entire card without distortion */
+    border-radius:10px;
+    display: block; /* Remove unwanted gaps below the image */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills Section Styling */
+#skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Stretch content to fill the section height */
+  padding: 0; /* Remove padding to avoid gaps */
+  margin: 0; /* Remove margin to align with the container */
+  overflow: hidden; /* Prevent any overflow */
+  background-color: white;
+}
+/* Skills Container Styling */
+.skills-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Skills section Text Styling */
+.skills-text {
+  flex: 1;
+  text-align: left;
+  margin-left:100px;
+}
+
+.skills-text h2 {
+  font-family: 'impact';
+  letter-spacing:2px;
+  line-height:300px;
+  font-size: 300px; /* Large text size */
+  color: #f69a31;
+  z-index:1;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.skills-text p {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-color:#333;
+}
+
+/* Skills section Image Styling */
+.skills-image {
+  flex: 1;
+  text-align: right;
+  padding: 0px;
+  z-index:3;
+  margin-right:100px;
+}
+
+.skills-image img {
+ max-width: 100%; /* Ensure full width */
+  height: 100%; /* Make the image fill the section height */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 0; /* Remove border-radius for edge alignment */
+  display: block; /* Prevent inline-block gaps */
+  transition: transform 0.3s ease; /* Add a subtle zoom effect */}
+
+.skills-image img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Contacts section Styling */
+
+/* Contacts Title Styling */
+#contact h2{
+  color:#b03459;
+  font-family:'impact';
+  letter-spacing: 15px;
+  font-size: 50px;
+}
+/* Contact Button Container */
+.contact-container {
+  margin-top: 40px;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items in a single column */
+  align-items: left; /* Center the content horizontally */
+  gap: 20px; /* Add space between the rows */
+  margin-bottom: 50px;
+
+
+}
+
+/* Contact button */
+.contact-button {
+  letter-spacing:5px;
+  display: flex; /* Flexbox for side-by-side layout */
+  align-items: center; /* Vertically align items within the button */
+  gap: 10px; /* Add space between the icon and text */
+  width: auto; /* Adjust the width to fit content */
+  flex: 0 0 auto; /* Prevent flexbox from stretching or shrinking the buttons */
+  transition: transform 0.3s ease; 
+  margin-left: 725px;
+  text-decoration: none; /* Optional: Remove underline from links */
+  color: inherit; /* Inherit text color */
+}
+
+/* Contact button icon */
+.contact-button img {
+  height: 40px; /* Set a fixed height for the icon */
+  object-fit: cover; /* Ensure the image is not distorted */
+  display: block; /* Remove unwanted gaps below the image */
+}
+
+/* Contact button text */
+.contact-button span {
+  font-family: 'poppinsRegular', sans-serif;
+  font-size: 18px; /* Adjust font size as needed */
+}
+.contact-button:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+}
+
+/* CV Button Styling */
+.cv-button {
+  background: #b03459;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  font-family: 'poppinsRegular', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; /* Adjust padding for better appearance */
+  text-align: center;
+}
+
+.cv-button:hover {
+  background: #0056b3;
+}
+
+
+/* About Page */
+#about {
+  padding: 50px;
+  background-color: white;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* Adjust space between text and image */
+  max-width: 1200px;
+  margin-bottom: 20px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: -50px;
+}
+
+/* About Page text styling*/
+
+.about-text {
+  flex: 1; /* Text takes up more space */
+  max-width: 600px;
+}
+
+.about-text h1 {
+  font-size: 100px;
+  color: #115b6c;
+  font-family:"migra";
+  letter-spacing: 1 px;
+  margin-bottom:0px;
+}
+
+.about-text p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+}
+
+/* About Page image styling */
+.about-image img {
+  width: 650px;
+  margin-right: -50px; /* Adjust horizontal position */
+  margin-top: 20px; /* Adjust vertical position */
+  transform: translateX(100px) scale(1.25); /* Refine position and size */
+}
+
+
+

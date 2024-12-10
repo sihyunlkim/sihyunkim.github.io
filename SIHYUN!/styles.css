@@ -1,0 +1,479 @@
+
+/* Fonts */
+@font-face{
+    font-family: 'impact';
+    src: url('font/impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'poppinsLight';
+    src: url('font/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'poppinsRegular';
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'migra';
+    src: url('font/PPMigra-Extralight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+  font-family: 'poppinsLight';
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: white;
+}
+
+
+/* Header (Navigation Bar) */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #689b61;
+}
+/* Hamburger menu - hidden on large screens */
+.hamburger-menu {
+  display: none; 
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  margin-left: 80vw;
+  cursor: pointer;
+  box-shadow: none; /* Remove button shadow */
+  transition: color 0.3s ease; 
+}
+
+.hamburger-menu:hover {
+  color: #007bff; /* color change */
+}
+
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1vw;
+    background: #689b61;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3000;
+}
+
+/* Home Section */
+ #home {
+  position: relative;
+  height: auto; /* Allow the section height to adjust based on the content */
+  background-color: white ;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top of the section */
+  overflow: hidden; /* Hide anything overflowing the section */
+  padding-bottom: 0; /* Ensure no padding at the bottom */
+}
+
+.home-container {
+  position: relative;
+  text-align: center;
+}
+
+
+.home-image {
+    width: 40vw;
+    height: auto;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+
+/* Text Stylings */
+.home-text {
+  position: absolute; 
+  top: 15%; 
+  left : 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  z-index: 1; /* Ensure text is below the image */
+  color: #333; /* Text color */
+}
+
+
+.home-text h2 {
+  font-family: 'poppinsLight';
+  font-size: 5vw;
+  color: #555; /* Subheading color */
+  margin-top: 12vw;
+  margin-bottom: -22vw;
+}
+
+.home-text h1 {
+  font-family: 'impact';
+  font-size: 22vw;
+  font-weight: bold;
+  color: #689b61; /* Green color for the name */
+  margin-bottom: -22vw;
+}
+
+.know-more-button {
+  position: absolute; /* Positioning to overlap the image */
+  top: 80%; 
+  left: 50%-20px; /* Center horizontally */
+  background: #689b61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'poppinsRegular';
+  font-size: 1.85vw;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 3; /* Ensure the button is above everything */
+}
+
+.know-more-button:hover {
+  transform: scale(1.05);/* making the button bigger when hovered */
+}
+
+
+
+
+/* Project Section Styling */
+section#projects {
+  position: relative; /* Make the section a positioned container */
+  text-align: center; /* Center text horizontally within the section */
+  padding-top: 20px; /* Add spacing at the top of the section */
+  background-color: white;
+
+}
+
+/* Section Title Styling */
+section#projects h2 {
+  font-family: 'impact';
+  letter-spacing: 2px;
+  position: absolute; /* Position the title independently */
+  top: 10px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); 
+  margin: 0; /* Remove default margins */
+  font-size: 5vw;
+  color: #295ba9; /* Text color */
+  z-index: 2; /* Ensure it stays on top of other elements */
+}
+
+/* Project Link Styling */
+.project-link {
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the link behave like a container */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Project Cards Container Styling */
+.project-container {
+  margin-top: 10vw;
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: center; /* Center the cards within the section */
+  gap: 20px; /* Add space between the cards */
+
+}
+
+/* Individual Project Card  Styling*/
+.project-card  {
+  flex: 1 1 calc(25% - 40px); /* Each card takes up 1/3 of the row minus spacing */  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0; /* Remove unnecessary vertical centering margin */
+}
+.project-card img {
+    width: 100%; /* Make the image span the full width of the card */
+    height: 100%; /* Make the image span the full height of the card */
+    object-fit: cover; /* Ensure the image covers the entire card without distortion */
+    border-radius:10px;
+    display: block; /* Remove unwanted gaps below the image */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Skills Section */
+#skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Stretch content to fill the section height */
+  padding: 0; /* Remove padding to avoid gaps */
+  margin: 0; /* Remove margin to align with the container */
+  overflow: hidden; /* Prevent any overflow */
+  background-color: white;
+}
+.skills-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills-text {
+  flex: 1;
+  text-align: left;
+  margin-left:50px;
+}
+
+.skills-text h2 {
+  font-family: 'impact';
+  letter-spacing:2px;
+  line-height:15vw;
+  font-size: 15vw; /* Large text size */
+  color: #f69a31;
+  z-index:1;
+  margin-top: 3vw;
+  margin-bottom: 0px;
+}
+.skills-text p {
+  font-size: 2vw;
+  font-color:#333;
+}
+
+.skills-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.skills-image img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#contact h2 {
+  color:#b03459;
+  font-family:'impact';
+  letter-spacing: 1vw;
+  font-size: 3vw;}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+    gap: 10px;
+    font-family:'poppinsRegular';
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-button img {
+  height: 3vw; /* Set a fixed height for the icon */
+  object-fit: cover; /* Ensure the image is not distorted */
+  display: block; /* Remove unwanted gaps below the image */
+}
+
+.contact-button span {
+  font-family: 'poppinsRegular', sans-serif;
+  font-size: 1.5vw; /* Adjust font size as needed */
+}
+.contact-button:hover {
+    transform: translateY(-5px);
+}
+
+/* CV Button Styling */
+.cv-button {
+  background: #b03459;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  margin-top: 2vw;
+  margin-bottom: 7vw ;
+  border-radius: 20px;
+  font-family: 'poppinsRegular', sans-serif;
+  font-size: 1.3vw;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; /* Adjust padding for better appearance */
+  text-align: center;
+}
+
+.cv-button:hover {
+  background: #0056b3;
+}
+
+
+/* About Page */
+#about {
+  padding: 50px;
+  background-color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* Space between text and image */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* About Page text styling */
+.about-text {
+  flex: 1; /* Text takes up more space */
+  min-width: 300px; /* Ensure text doesn't shrink too much */
+  max-width: 600px; /* Limit the text width */
+}
+
+.about-text h1 {
+  font-size: 5vw;
+  color: #115b6c;
+  font-family: "migra";
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.about-text p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+}
+
+/* About Page image styling */
+.about-image img {
+  width: 100%;
+  max-width: 650px; /* Ensure the image scales with the container */
+  height: auto; /* Maintain the aspect ratio */
+  transform: translateX(0) scale(1); /* Reset transform */
+  margin: 0; /* Reset margins for better responsiveness */
+}
+
+
+
+
+
+/* Media Queries *s
+
+/* Responsive styles for navigation */
+@media (max-width: 768px) {
+  /* Show the hamburger menu */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Hide the navigation links initially */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Below the header */
+    right: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    padding: 10px 20px;
+  }
+
+  /* Show the navigation links when active */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Adjust navigation links for mobile */
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+   .about-container {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .about-text {
+    max-width: 100%; /* Allow text to fill the container */
+    text-align: center; /* Center text alignment */
+  }
+
+  .about-text h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .about-image img {
+    transform: scale(1); /* Remove scaling on smaller screens */
+    margin: 20px auto; /* Center image */
+  }
+
+}
+
+
+
